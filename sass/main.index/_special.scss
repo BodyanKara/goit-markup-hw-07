@@ -10,18 +10,18 @@
 .special__item {
     flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
-}
 
-.special__item::before {
-    content: "";
-    display: block;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
+    &::before {
+        content: "";
+        display: block;
+        height: 120px;
+        background-color: #F5F4FA;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
 }
 
 .antena::before {

@@ -17,12 +17,12 @@
     height: 100%;
     padding: 16px 32px;
     transition: color 250ms var(--time-animation), border-color 250ms var(--time-animation);
-}
 
-.client__link:hover,
-.client__link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
 
 .client__icon {

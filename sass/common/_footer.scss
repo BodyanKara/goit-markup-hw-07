@@ -78,11 +78,10 @@
 .social__item {
     width: 44px;
     height: 44px;
-}
-
-.social__item:not(:last-child) {
-    margin-right: 10px;
-
+    &:not(:last-child) {
+            margin-right: 10px;
+    
+        }
 }
 
 .social__link {
@@ -94,12 +93,12 @@
     padding: 12px;
     border-radius: 50%;
     transition: background-color 250ms var(--time-animation);
-}
 
-.social__link:hover,
-.social__link:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus{
+        color: #FFFFFF;
+        background-color: var(--accent-color);
+    }
 }
 
 .social__icon {
@@ -121,13 +120,14 @@
     border-radius: 4px;
     color: #fff;
     transition: border-color 250ms var(--time-animation), box-shadow 250ms var(--time-animation);
+    
+    &--active:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        }
 }
 
-.footer-form__input--active:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-}
 
 .footer-form__btn {
     position: relative;
@@ -149,14 +149,14 @@
     border: 0;
     transition: background-color 250ms var(--time-animation), bos-shadow 250ms var(--time-animation);
 
+    &:hover,
+    &:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: #188CE8;
+    }
+
 }
 
-.footer-form__btn:hover,
-.footer-form__btn:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    ;
-    background-color: #188CE8;
-}
 
 .footer-form__icon {
     position: absolute;
