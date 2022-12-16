@@ -22,6 +22,9 @@
         margin-bottom: 30px;
         border-radius: 4px;
     }
+    &:last-child {
+        margin: 0;
+    }
 }
 
 .antena::before {
@@ -38,10 +41,6 @@
 
 .spaceman::before {
     background-image: url(../images/basic/astronaut.svg);
-}
-
-.item:last-child {
-    margin: 0;
 }
 
 .special__title {
